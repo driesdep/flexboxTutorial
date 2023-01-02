@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    height: 100vh;
+    border: 20px solid black;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+
+}
+
+.child1 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    /* flex: 1 1 300px; */
+
+
+}
+
+.child2 {
+    width: 200px;
+    height: 200px;
+    background: rebeccapurple;
+    order: 2;
+    /* flex: 1 1 300px; */
+    align-self: flex-end;
+    /* flex-grow: 2; */
+}
+
+.child3 {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    order: 1;
+    /* flex: 1 1 300px; */
+    /* flex-grow: 1; */
+    /* flex-basis: 200px; */
+}
+
+.child4 {
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    order: 3;
+    /* flex: 1 1 300px; */
+}
+
+/* parent properties : 
+                        -   display:flex: zal alle content horizontaal plaatsen
+                                horizontaal : hoofdas
+                                Kijk in welke richting uw content (inhoud) vloeit.
+                        
+                        -   flex-direction : richting (horizontaal/vertikaal)   
+                        - justity -content : waar de content (begin/center/einde)
+                                            space-between 
+                                            space-arround : spatie tussen elementen + begin/einde    
+                        - align-item : zal de children nemen, en hen vertikaal uitlijnen.
+                        - flex-wrap :wrap : Bij het verkleinen van het scherm zal de eene blok overspringen naar beneden.
+                        */
+
+/* Children properties:
+                        - order : volgorde van de secties zonder iets te veranderen in HTML 
+                        - flex-grow/shrink : neemt alle aanwezige overbodige ruimte , en vult die op.
+                        - flex: 1 0 auto -> 1: grew  0:schrink auto: default 
+                        - align-self:center  -> element centreren vertikaal op uw pagina. */
